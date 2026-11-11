@@ -159,6 +159,9 @@ html[data-theme="dark"] .icon-moon{opacity:0;transform:rotate(-90deg) scale(.6)}
 }
 .hero .content{position:relative;z-index:1;padding:48px 0 72px;width:min(1180px,calc(100% - 40px));margin:0 auto}
 .kicker{font-family:Manrope,"Segoe UI",sans-serif;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--mark);margin-bottom:12px}
+.section.paper .kicker,.section.wash .kicker{color:#BE402F}
+html[data-theme="dark"] .section.paper .kicker,
+html[data-theme="dark"] .section.wash .kicker{color:var(--mark)}
 .hero p.lead{font-size:20px;max-width:38ch;margin-bottom:22px;color:var(--on-dark)}
 .proof{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 24px}
 .proof span{display:inline-flex;align-items:center;min-height:36px;padding:4px 12px;border:1px solid rgba(255,255,255,.35);border-radius:999px;font-size:15px;color:var(--on-dark)}
