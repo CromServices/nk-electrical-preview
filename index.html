@@ -4,8 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Electricians in Wallan, Wandong, Kilmore and Craigieburn | N&amp;K Electrical</title>
-<meta name="description" content="Electrical work in Wallan, Wandong, Kilmore and Craigieburn. Free no-obligation quote. Call 0418 569 953.">
+<title>N&amp;K Electrical — Home</title>
+<meta name="description" content="Website preview.">
+<meta property="og:title" content="N&amp;K Electrical — Home">
+<meta property="og:description" content="Website preview.">
+<meta name="twitter:description" content="Website preview.">
 <link rel="preload" href="fonts/manrope-700.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/manrope-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/sourcesans3.woff2" as="font" type="font/woff2" crossorigin>
@@ -166,26 +169,27 @@
       <label>Phone <input type="tel" name="phone" id="q-phone" autocomplete="tel"></label>
       <label class="full">Email <input type="email" name="email" id="q-email" autocomplete="email"></label>
       <label class="full">Suburb or address <input type="text" name="suburb" id="q-suburb"></label>
-      <label class="full">Type of work
-        <select name="type" id="q-type">
-          <option value="">Please choose</option>
-          <option>Installations and alterations</option>
-          <option>Lights and power points</option>
-          <option>Switchboards</option>
-          <option>Air conditioning</option>
-          <option>Hot water and ovens</option>
-          <option>Data, security and audio-visual</option>
-          <option>Other</option>
-        </select>
-      </label>
+      <div class="full">
+        <p class="widget-label" id="q-type-label">Type of work</p>
+        <div class="radio-pills" role="radiogroup" aria-labelledby="q-type-label">
+          <label class="pill"><input type="radio" name="type" value="Installations and alterations">Installations and alterations</label>
+          <label class="pill"><input type="radio" name="type" value="Lights and power points">Lights and power points</label>
+          <label class="pill"><input type="radio" name="type" value="Switchboards">Switchboards</label>
+          <label class="pill"><input type="radio" name="type" value="Air conditioning">Air conditioning</label>
+          <label class="pill"><input type="radio" name="type" value="Hot water and ovens">Hot water and ovens</label>
+          <label class="pill"><input type="radio" name="type" value="Data, security and audio-visual">Data, security and audio-visual</label>
+          <label class="pill"><input type="radio" name="type" value="Other">Other</label>
+        </div>
+      </div>
       <label class="full">A short description <textarea name="details" id="q-details"></textarea></label>
-      <label>Preferred time to talk
-        <select name="when" id="q-when">
-          <option>Morning</option>
-          <option>Midday</option>
-          <option>Afternoon</option>
-        </select>
-      </label>
+      <div class="full">
+        <p class="widget-label" id="q-when-label">Preferred time to talk</p>
+        <div class="radio-pills" role="radiogroup" aria-labelledby="q-when-label">
+          <label class="pill"><input type="radio" name="when" value="Morning" checked>Morning</label>
+          <label class="pill"><input type="radio" name="when" value="Midday">Midday</label>
+          <label class="pill"><input type="radio" name="when" value="Afternoon">Afternoon</label>
+        </div>
+      </div>
       <div class="submit"><button class="btn btn-accent" type="submit">Request a quote</button></div>
     </form>
     <div class="thanks" id="quote-success" hidden>Quote request saved.</div>
